@@ -1,0 +1,55 @@
+.project-card {
+  display: flex;
+
+  &__feature-image-container {
+    height: 34.2rem;
+    width: 49.6rem;
+    background-color: $white;
+  }
+
+  &__project-info-container {
+    margin-left: 5.8rem;
+  }
+
+  &__project-title {
+    font-size: 3.6rem;
+    color: $white;
+  }
+
+  &__project-description {
+    font-size: 1.8rem;
+    color: $white;
+    max-width: 46.5rem;
+    margin-top: 3.1rem;
+  }
+
+  &__tech-stack-container {
+    margin-top: 4.6rem;
+  }
+
+  &__button-container {
+    margin-top: 8.7rem;
+  }
+
+  &__button {
+    width: 15.6rem;
+    height: 4.4rem;
+    background-color: $primary;
+    border: 3px solid $white;
+    color: $white;
+    font-size: 2rem;
+    transition: all ease 0.2s;
+
+    &:not(:nth-of-type(1)) {
+      margin-left: 1.2rem;
+      background-color: $white;
+      color: $primary;
+      border: 3px solid $primary;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: transparent;
+    }
+  }
+}
