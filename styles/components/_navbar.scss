@@ -36,3 +36,15 @@
   width: 100%;
   position: relative;
 }
+
+.nav-name {
+  position: absolute;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  color: $white;
+  font-size: 3.6rem;
+  transform: rotate(180deg);
+  bottom: 1px;
+  margin-bottom: -20rem;
+  margin-left: 2rem;
+}

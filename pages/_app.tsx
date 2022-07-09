@@ -11,6 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   return (
     <div className="main-container">
+      <h3 className="nav-name">Home</h3>
       <div className="navbar">
         <ul>
           <li
