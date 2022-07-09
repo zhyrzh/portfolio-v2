@@ -7,10 +7,13 @@ import HomeIcon from "./icons/HomeIcon";
 
 const Navbar = () => {
   const router = useRouter();
+
   return (
     <>
       <div className="navbar">
-        <h3 className="nav-name">Home</h3>
+        <h3 className="nav-name">
+          {router.pathname === "/" ? "Home" : router.pathname.substring(1)}
+        </h3>
         <ul>
           <li
             style={{
@@ -19,7 +22,9 @@ const Navbar = () => {
             }}
           >
             <Link href={"/about"}>
-              <AboutIcon isActive={router.pathname === "/about"} />
+              <a>
+                <AboutIcon isActive={router.pathname === "/about"} />
+              </a>
             </Link>
           </li>
           <li
@@ -28,14 +33,22 @@ const Navbar = () => {
                 router.pathname === "/works" ? "#2994F2" : "#D9D9D9",
             }}
           >
-            <WorksIcon isActive={router.pathname === "/works"} />
+            <Link href={"/works"}>
+              <a>
+                <WorksIcon isActive={router.pathname === "/works"} />
+              </a>
+            </Link>
           </li>
           <li
             style={{
               backgroundColor: router.pathname === "/" ? "#2994F2" : "#D9D9D9",
             }}
           >
-            <HomeIcon isActive={router.pathname === "/"} />
+            <Link href="/">
+              <a>
+                <HomeIcon isActive={router.pathname === "/"} />
+              </a>
+            </Link>
           </li>
         </ul>
       </div>
