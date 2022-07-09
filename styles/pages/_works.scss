@@ -2,13 +2,14 @@
   display: flex;
 
   &__feature-image-container {
-    height: 34.2rem;
+    min-height: 34.2rem;
     width: 49.6rem;
     background-color: $white;
   }
 
   &__project-info-container {
     margin-left: 5.8rem;
+    height: 100%;
   }
 
   &__project-title {
@@ -28,7 +29,7 @@
   }
 
   &__button-container {
-    margin-top: 8.7rem;
+    margin-top: 8.6rem;
   }
 
   &__button {
