@@ -21,3 +21,9 @@ html {
   grid-template-columns: repeat(12, 1fr);
   position: relative;
 }
+
+.page-container {
+  grid-column: 2/12;
+  min-height: 100vh;
+  padding: 7rem 6rem 0rem 7rem;
+}

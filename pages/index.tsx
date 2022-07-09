@@ -1,10 +1,8 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
 
 const Home: NextPage = () => {
   return (
-    <div className="home-container">
+    <div className="page-container home-container">
       <div className="right-triangle"></div>
       <div className="home-main-content">
         <h1 className="banner-title-primary">Hello There!</h1>
