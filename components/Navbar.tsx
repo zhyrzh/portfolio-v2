@@ -9,8 +9,8 @@ const Navbar = () => {
   const router = useRouter();
   return (
     <>
-      <h3 className="nav-name">Home</h3>
       <div className="navbar">
+        <h3 className="nav-name">Home</h3>
         <ul>
           <li
             style={{

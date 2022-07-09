@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -15,7 +16,6 @@ html {
 .main-container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 7rem 6rem 0rem 8rem;
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(12, 1fr);
