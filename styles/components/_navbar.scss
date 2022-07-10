@@ -5,13 +5,19 @@
   justify-content: flex-start;
   flex-direction: column-reverse;
   height: 100%;
+  width: 13rem;
   right: 1px;
   padding-bottom: 5rem;
   padding-left: 3rem;
+  background-color: $black;
+  position: fixed;
+  left: 0;
+
   ul {
     list-style: none;
-    margin-top: -20rem;
-    margin-left: 3rem;
+    position: absolute;
+    right: -30px;
+
     li {
       width: 5.8rem;
       height: 5.8rem;
@@ -20,6 +26,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 
       &:hover {
         cursor: pointer;
@@ -47,5 +54,5 @@
   font-weight: 300;
   transform: rotate(180deg);
   bottom: 5.5rem;
-  left: 1px;
+  left: 40px;
 }

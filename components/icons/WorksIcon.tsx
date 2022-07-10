@@ -5,7 +5,7 @@ interface navIcon {
 const WorksIcon = ({ isActive }: navIcon) => {
   return (
     <svg
-      fill={isActive ? "#D9D9D9" : "#000000"}
+      fill={isActive ? "#eefaff" : "#23b2d8"}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 30 30"
       width="480px"

@@ -15,41 +15,54 @@ const Navbar = () => {
           {router.pathname === "/" ? "Home" : router.pathname.substring(1)}
         </h3>
         <ul>
-          <li
-            style={{
-              backgroundColor:
-                router.pathname === "/about" ? "#2994F2" : "#D9D9D9",
-            }}
-          >
-            <Link href={"/about"}>
+          <Link href={"/about"}>
+            <li
+              style={{
+                backgroundColor:
+                  router.pathname === "/about" ? "#23b2d8" : "#eefaff",
+                border:
+                  router.pathname === "/about"
+                    ? "3px solid #eefaff"
+                    : "3px solid #23b2d8",
+              }}
+            >
               <a>
                 <AboutIcon isActive={router.pathname === "/about"} />
               </a>
-            </Link>
-          </li>
-          <li
-            style={{
-              backgroundColor:
-                router.pathname === "/works" ? "#2994F2" : "#D9D9D9",
-            }}
-          >
-            <Link href={"/works"}>
+            </li>
+          </Link>
+          <Link href={"/works"}>
+            <li
+              style={{
+                backgroundColor:
+                  router.pathname === "/works" ? "#23b2d8" : "#eefaff",
+                border:
+                  router.pathname === "/works"
+                    ? "3px solid #eefaff"
+                    : "3px solid #23b2d8",
+              }}
+            >
               <a>
                 <WorksIcon isActive={router.pathname === "/works"} />
               </a>
-            </Link>
-          </li>
-          <li
-            style={{
-              backgroundColor: router.pathname === "/" ? "#2994F2" : "#D9D9D9",
-            }}
-          >
-            <Link href="/">
+            </li>
+          </Link>
+          <Link href="/">
+            <li
+              style={{
+                backgroundColor:
+                  router.pathname === "/" ? "#23b2d8" : "#eefaff",
+                border:
+                  router.pathname === "/"
+                    ? "3px solid #eefaff"
+                    : "3px solid #23b2d8",
+              }}
+            >
               <a>
                 <HomeIcon isActive={router.pathname === "/"} />
               </a>
-            </Link>
-          </li>
+            </li>
+          </Link>
         </ul>
       </div>
     </>
