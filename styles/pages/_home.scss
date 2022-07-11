@@ -1,4 +1,13 @@
 .home {
+  &__rectangle-design {
+    height: 14.8rem;
+    width: 49.7rem;
+    background-color: $primary;
+    position: absolute;
+    top: 6.1rem;
+    right: 0;
+  }
+
   &__primay-title {
     font-size: 4.8rem;
     margin-top: calc(15rem + 1.6rem);

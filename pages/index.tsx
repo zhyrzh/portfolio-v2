@@ -5,6 +5,7 @@ import homeBackground from "home-background.avif";
 const Home: NextPage = () => {
   return (
     <div className="page-container home">
+      <div className="home__rectangle-design"></div>
       <h1 className="home__primay-title">Hello World! I am Rhyz </h1>
       <p className="home__secondary-title">
         and this is my portfolio website. I am an aspiring software engineer who
