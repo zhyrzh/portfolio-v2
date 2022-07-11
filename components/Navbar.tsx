@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import AboutIcon from "./icons/AboutIcon";
 import WorksIcon from "./icons/WorksIcon";
 import HomeIcon from "./icons/HomeIcon";
+import Logo from "./icons/Logo";
 
 const Navbar = () => {
   const router = useRouter();
@@ -11,6 +12,7 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar">
+        <Logo />
         <h3 className="nav-name">
           {router.pathname === "/" ? "Home" : router.pathname.substring(1)}
         </h3>

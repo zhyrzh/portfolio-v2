@@ -12,7 +12,7 @@
   background-color: $black;
   position: fixed;
   left: 0;
-
+  z-index: 30;
   ul {
     list-style: none;
     position: absolute;
@@ -55,4 +55,10 @@
   transform: rotate(180deg);
   bottom: 5.5rem;
   left: 40px;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
