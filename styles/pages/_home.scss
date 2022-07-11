@@ -1,54 +1,61 @@
-.home-container {
-  display: flex;
-  min-width: 50.5rem;
-  position: relative;
-  justify-content: space-between;
-}
+.home {
+  &__primay-title {
+    font-size: 4.8rem;
+    margin-top: calc(15rem + 1.6rem);
+  }
 
-.home-main-content {
-  z-index: 2;
-  margin-top: 22rem;
-}
+  &__secondary-title {
+    font-size: 1.8rem;
+    max-width: 54rem;
+    margin-top: 2.2rem;
+  }
 
-.banner-title-primary {
-  font-family: $big-font;
-  font-size: 8.2rem;
-  font-weight: 600;
-}
+  &__button-container {
+    margin-top: 4.2rem;
+    display: flex;
+    flex-wrap: nowrap;
+  }
 
-.banner-title-secondary {
-  font-family: $text-font;
-  font-size: 2.8rem;
-  max-width: 46.5rem;
-  font-weight: 200;
-  position: relative;
-  margin-top: 4rem;
-}
-
-.right-triangle {
-  height: 0;
-  width: 0;
-  border-top: 31.4rem solid $primary;
-  border-right: 29.7rem solid transparent;
-  margin-left: -1.5rem;
-  position: absolute;
-}
-
-.image-container {
-  width: 53.7rem;
-  height: 45.6rem;
-  background-color: $primary;
-  position: absolute;
-  right: 0;
-  margin-top: 14rem;
-  &::before {
-    content: "";
-    width: 16rem;
-    height: 7.9rem;
-    background-color: $black;
+  &__button-icon {
     position: absolute;
-    top: -20px;
-    right: -65px;
-    transform: rotate(45deg);
+    right: 0;
+    margin-right: 2rem;
+    margin-top: auto;
+    margin-left: auto;
+    height: 22px;
+  }
+
+  &__button {
+    position: relative;
+    outline: none;
+    width: 23.7rem;
+    height: 5rem;
+    color: $primary;
+    background-color: $black;
+    font-size: 1.8rem;
+    border: 3px solid $primary;
+    transition: all ease 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      bottom: 0;
+      height: 5rem;
+      width: 2rem;
+      background-color: $primary;
+    }
+
+    &:not(:nth-of-type(1)) {
+      margin-left: 2rem;
+    }
   }
 }

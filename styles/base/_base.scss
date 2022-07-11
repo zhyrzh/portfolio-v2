@@ -9,21 +9,24 @@
 html {
   font-size: 62.5%;
   background-color: $white;
-  color: $white;
+  color: $black;
   font-family: $text-font;
 }
 
 .main-container {
-  max-width: 1400px;
-  margin: 0 auto;
+  margin-left: 13rem;
+  padding-right: 6rem;
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(11, 1fr);
   position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: unset;
 }
 
 .page-container {
   grid-column: 2/12;
   min-height: 100vh;
-  padding: 7rem 6rem 0rem 7rem;
+  padding-top: 15rem;
 }
