@@ -6,15 +6,7 @@ import { useRouter } from "next/router";
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   return (
-    <div
-      className="main-container"
-      style={{
-        backgroundImage:
-          router.pathname === "/"
-            ? "linear-gradient( 0deg, rgba(238, 250, 255, 0.9), rgba(238, 250, 255, 0.9)), url(./home-background.avif)"
-            : "",
-      }}
-    >
+    <div className="main-container">
       <Navbar />
       <Component {...pageProps} />
     </div>
