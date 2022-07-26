@@ -65,3 +65,10 @@ svg {
     scroll-behavior: auto !important;
   }
 }
+
+.main-container {
+  min-height: 100vh;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: minmax(4rem, 1fr) minmax(1fr, 100%) minmax(4rem, 1fr);
+}
