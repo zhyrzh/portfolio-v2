@@ -7,7 +7,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   return (
     <div className="main-container">
-      <Navbar />
       <Component {...pageProps} />
     </div>
   );
