@@ -1,10 +1,17 @@
 import type { NextPage } from "next";
-import Featured from "../components/icons/Featured";
+import Head from "next/head";
 import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
     <>
+      <Head key={"home"}>
+        <title>Portfolio by Rhyz | Home</title>
+        <meta
+          name="description"
+          content="Portfolio website of Rhyz Arong"
+        ></meta>
+      </Head>
       <header className="header">
         <div className="header__circle"></div>
         <h3 className="header__title">
