@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  padding-top: 2rem;
+  padding-left: 2.5rem;
+  &__circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: $yellow-100;
+    border-radius: 100%;
+    margin-right: 11px;
+  }
+  &__title {
+    font-size: $fs-300;
+    font-weight: $fw-bold;
+  }
+  &__sub-title {
+    font-weight: $fw-light;
+  }
+}
