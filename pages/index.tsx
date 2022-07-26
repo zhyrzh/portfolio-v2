@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Featured from "../components/icons/Featured";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
@@ -20,7 +21,9 @@ const Home: NextPage = () => {
           </h3>
           <nav className="home__nav">
             <ul className="home__nav-item-container">
-              <li className="home__nav-item">Works</li>
+              <Link href={"/works"}>
+                <li className="home__nav-item">Works</li>
+              </Link>
               <li className="home__nav-item">About</li>
               <li className="home__nav-item">Contact</li>
             </ul>

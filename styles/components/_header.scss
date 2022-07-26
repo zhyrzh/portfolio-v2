@@ -2,6 +2,10 @@
   display: flex;
   padding-top: 2rem;
   padding-left: 2.5rem;
+  @media (max-width: 50em) {
+    padding-top: 1rem;
+    padding-left: 1rem;
+  }
   &__circle {
     width: 1.5rem;
     height: 1.5rem;
@@ -12,8 +16,14 @@
   &__title {
     font-size: $fs-300;
     font-weight: $fw-bold;
+    @media (max-width: 50em) {
+      font-size: $fs-100;
+    }
   }
   &__sub-title {
     font-weight: $fw-light;
+    @media (max-width: 50em) {
+      font-size: $fs-100;
+    }
   }
 }

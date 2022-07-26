@@ -5,7 +5,14 @@
   grid-auto-flow: column;
   grid-template-columns: 1fr;
   margin-inline: auto;
+  padding-top: 10rem;
   gap: 2.5rem;
+  padding-inline: 1rem;
+
+  @media (max-width: 50rem) {
+    grid-auto-flow: row;
+    padding-top: 3rem;
+  }
 
   &__content {
     display: flex;
@@ -14,30 +21,42 @@
   }
   &__hero {
     background-color: $white-500;
-    height: 20.57rem;
-    width: 20.57rem;
+    height: 18.57rem;
+    width: 18.57rem;
     border-radius: 100%;
+    @media (max-width: 50rem) {
+      order: 2;
+    }
   }
   &__content-main-text {
     font-weight: $fw-bold;
     font-size: $fs-700;
     margin-left: 6px;
+    @media (max-width: 50em) {
+      font-size: 36px;
+    }
   }
   &__content-sub-text {
     font-weight: $fw-light;
     font-size: $fs-400;
-    width: 21rem;
+    max-width: 21rem;
     margin-left: 6px;
+    @media (max-width: 50em) {
+      font-size: 18px;
+    }
   }
 
   &__nav-item-container {
     list-style: none;
     display: flex;
     margin-bottom: 4px;
+    @media (max-width: 50em) {
+      margin-top: 2rem;
+    }
   }
   &__nav-item {
-    width: 5.875rem;
-    height: 5.875rem;
+    width: 4.875rem;
+    height: 4.875rem;
     background-color: $grey-100;
     border-radius: 100%;
     display: flex;
@@ -45,6 +64,8 @@
     justify-content: center;
     color: black;
     margin-top: 13px;
+    border: 1px solid $grey-100;
+    transition: all ease 0.3s;
 
     &:not(:nth-of-type(1)) {
       margin-left: 13px;
@@ -58,6 +79,11 @@
     }
     &:nth-of-type(3) {
       background-color: $blue-100;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: transparent;
     }
   }
 }
