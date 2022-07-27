@@ -31,7 +31,9 @@ const Home: NextPage = () => {
               <Link href={"/works"}>
                 <li className="home__nav-item">Works</li>
               </Link>
-              <li className="home__nav-item">About</li>
+              <Link href={"/about"}>
+                <li className="home__nav-item">About</li>
+              </Link>
               <li className="home__nav-item">Contact</li>
             </ul>
           </nav>
