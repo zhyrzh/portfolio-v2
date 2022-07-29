@@ -1,0 +1,19 @@
+.about {
+  text-align: center;
+  &__title {
+    font-size: $fs-600;
+    font-weight: $fw-bold;
+    margin-bottom: 40px;
+  }
+
+  &__content {
+    font-weight: $fw-light;
+    font-size: $fs-300;
+    max-width: 489px;
+    margin-inline: auto;
+
+    &:not(:nth-of-type(1)) {
+      margin-top: 37px;
+    }
+  }
+}
