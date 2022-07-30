@@ -16,4 +16,47 @@
       margin-top: 37px;
     }
   }
+  &__tech-container {
+    max-width: 749px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-inline: auto;
+    margin-top: 54px;
+  }
+
+  &__tech-category {
+    &:not(:nth-child(1)) {
+      h1 {
+        margin-bottom: 74px;
+      }
+    }
+  }
+
+  &__tech-category-title {
+    font-size: 18px;
+    font-weight: $fw-bold;
+    max-width: 200px;
+    margin-inline: auto;
+    margin-bottom: 20px;
+  }
+  &__tech-category-techs {
+    max-width: 223px;
+    padding-block: 37px;
+    padding-inline: 37px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 61px;
+  }
+  &__tech-title {
+    font-size: 8px;
+    font-weight: $fw-light;
+    text-transform: uppercase;
+  }
+
+  &__tech-icon {
+    height: 100%;
+    width: 36px;
+  }
 }
