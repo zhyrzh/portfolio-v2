@@ -1,17 +1,11 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 import Link from "next/link";
+import CustomHead from "../components/CustomHead";
 
 const Home: NextPage = () => {
   return (
     <>
-      <Head key={"home"}>
-        <title>Portfolio by Rhyz | Home</title>
-        <meta
-          name="description"
-          content="Portfolio website of Rhyz Arong"
-        ></meta>
-      </Head>
+      <CustomHead pageTitle="About" />
       <header className="header">
         <div className="header__circle"></div>
         <h3 className="header__title">

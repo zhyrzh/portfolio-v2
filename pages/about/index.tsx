@@ -157,7 +157,7 @@ const About: NextPage = () => {
             <h1 className="about__tech-category-title">BACKEND</h1>
             <div
               className="about__tech-category-techs"
-              style={{ border: "3px solid #f85e5e" }}
+              style={{ border: "3px solid #40bde4" }}
             >
               {/* ------ */}
               <div className="about__tech">
