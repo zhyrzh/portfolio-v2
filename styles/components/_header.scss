@@ -22,6 +22,7 @@
   }
   &__sub-title {
     font-weight: $fw-light;
+    text-transform: capitalize;
     @media (max-width: 50em) {
       font-size: $fs-100;
     }

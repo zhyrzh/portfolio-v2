@@ -8,12 +8,6 @@ const About: NextPage = () => {
   return (
     <>
       <CustomHead pageTitle="About" />
-      <header className="header">
-        <div className="header__circle"></div>
-        <h3 className="header__title">
-          Rhyz Arong | <span className="header__sub-title">Home</span>
-        </h3>
-      </header>
       <div className="about">
         <h1 className="about__title">Who am I</h1>
         <p className="about__content">
@@ -40,11 +34,6 @@ const About: NextPage = () => {
           ))}
         </div>
       </div>
-      <footer className="footer">
-        <h3 className="footer__text">
-          <span>&copy;</span> Rhyz Arong 2022
-        </h3>
-      </footer>
     </>
   );
 };
