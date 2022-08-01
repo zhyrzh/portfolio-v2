@@ -1,9 +1,15 @@
 .about {
   text-align: center;
+  @media (max-width: 50em) {
+    padding-inline: 20px;
+  }
   &__title {
     font-size: $fs-600;
     font-weight: $fw-bold;
     margin-bottom: 40px;
+    @media (max-width: 50em) {
+      font-size: $fs-400;
+    }
   }
   &__content {
     font-weight: $fw-light;
@@ -14,6 +20,10 @@
     &:not(:nth-of-type(1)) {
       margin-top: 37px;
     }
+
+    @media (max-width: 50em) {
+      font-size: $fs-100;
+    }
   }
   &__tech-container {
     max-width: 749px;
@@ -22,12 +32,22 @@
     justify-content: space-between;
     margin-inline: auto;
     margin-top: 54px;
+    @media (max-width: 50em) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__tech-category {
     &:not(:nth-child(1)) {
       h1 {
         margin-bottom: 74px;
+        @media (max-width: 50em) {
+          margin-bottom: 20px;
+        }
       }
+    }
+    @media (max-width: 50em) {
+      margin-bottom: 40px;
     }
   }
   &__tech-category-title {
